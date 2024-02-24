@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <h1>Задача 7</h1>
+    <p>
+        З клавіатури вводиться номер місяця. Вивести до якої пори він відноситься
+
+    </p>
+    <script>
+        //Вводимо необхідні дані
+        let monthNumber = parseInt(prompt('Введіть номер місяця ', '0'))
+
+        //Обчислення та вивід результату
+        let result;
+        switch (monthNumber) {
+            case parseInt('1'):
+                result = 'Зима';
+                break;
+            case parseInt('2'):
+                result = 'Зима';
+                break;
+            case parseInt('3'):
+                result = 'Весна';
+                break;
+            case parseInt('4'):
+                result = 'Весна';
+                break;
+            case parseInt('5'):
+                result = "Весна";
+                break;
+            case parseInt('6'):
+                result = 'Літо';
+                break;
+            case parseInt('7'):
+                result = 'Літо';
+                break;
+            case parseInt('8'):
+                result = 'Літо';
+                break;
+            case parseInt('9'):
+                result = 'Осінь';
+                break;
+            case parseInt('10'):
+                result = 'Осінь';
+                break;
+            case parseInt('11'):
+                result = 'Осінь';
+                break;
+            case parseInt('12'):
+                result = 'Зима';
+                break;
+
+            default:
+                result = 'Введіть від 1 до 12';
+                break;
+        }
+
+        document.write(`${result}`)
+
+
+    </script>
+</body>
+
+</html>

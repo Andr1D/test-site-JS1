@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <h1>Задача 1</h1>
+    <p>
+        З клавіатури вводяться імена двох дітей та кількість у них цукерок. Вивести не екран ім’я тієї дитини, у якої
+        кількість цукерок є більшою, або вивести, що кількість однакова.
+    </p>
+    <script>
+        // Вводимо Вихідні дані
+
+        const nameFirstChild = prompt("Введіть ім'я першої дитини:")
+        const numberСandiesFirstChild = parseInt(prompt(`Введіть кількість цукерок, які має ${nameFirstChild}:`))
+
+        const nameSecondChild = prompt("Введіть ім'я другої дитини:")
+        const numberСandiesSecondChild = parseInt(prompt(`Введіть кількість цукерок, які має ${nameSecondChild}:`))
+
+        // Обчислення та вивід результату на екран
+        if (numberСandiesFirstChild > numberСandiesSecondChild)
+            document.write(`${nameFirstChild} має більше цукерок`)
+
+        else if (numberСandiesFirstChild === numberСandiesSecondChild)
+            document.write(`${nameFirstChild} та ${nameSecondChild} мають однакову кількість цукерок`)
+
+        else if (numberСandiesFirstChild < numberСandiesSecondChild)
+            document.write(`${nameSecondChild} має більше цукерок`)
+
+        else if (numberСandiesFirstChild || numberСandiesSecondChild)
+
+            document.write('Некоректний ввід данних. Спробуйте кількість цукерок вказати числом')
+
+
+    </script>
+</body>
+
+</html>
